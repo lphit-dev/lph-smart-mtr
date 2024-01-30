@@ -1,0 +1,95 @@
+body {
+  background: #e8e8e8 !important;
+  font-family: "Kanit";
+  font-size: 14px;
+}
+
+.h3{
+  padding-bottom: 15px;
+  margin-top: 1.5em;
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.col{
+  
+}
+
+/* .col1{
+  text-align: end;
+} */
+
+.col2{
+  text-align: end;
+}
+
+.col3{
+  margin-left: -4rem;
+}
+
+.space{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.space1{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  margin-left: 9rem;
+  width: 170px;
+}
+
+.text-space {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.5em;
+  background-color: #ffffff;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-coming {
+  border-radius: 50px;
+  background-color: #53be3e ;
+  color: white;
+  font-size: 16px;
+  border: none;
+  margin-top: 1em;
+  padding: 0.5rem 1rem;
+}
+
+.btn-coming:hover {
+  background-color: #3aaf23;
+  color: white;
+}
+
+.btn-back {
+  border-radius: 50px;
+  background-color: #ed4c40 ;
+  color: white;
+  font-size: 16px;
+  border: none;
+  margin-top: 1em;
+  padding: 0.5rem 1rem;
+}
+
+.btn-back:hover {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+

@@ -1,0 +1,60 @@
+body {
+    background: #e8e8e8 !important;
+    font-family: "Kanit";
+    font-size: 14px;
+  }
+
+  .h3{
+    padding-bottom: 15px;
+    margin-top: 1.2em;
+  }
+
+  .btn-coming {
+    border-radius: 50px;
+    background-color: #53be3e ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+  }
+  
+  .btn-coming:hover {
+    background-color: #79b791;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn-nobook {
+    border-radius: 50px;
+    background-color: #be3e3e ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+  }
+  
+  .btn-nobook:hover {
+    background-color: #b77979;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn-back {
+    border-radius: 50px;
+    background-color: #3e78be ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+  }
+  
+  .btn-back:hover {
+    background-color: #799fb7;
+    color: white;
+    text-decoration: none;
+  }
+
+  .img{
+      text-align: end;
+      border-radius: 0.5rem;
+  }

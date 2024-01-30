@@ -1,0 +1,44 @@
+body {
+  background: #e8e8e8 !important;
+  font-family: "Kanit";
+  font-size: 14px;
+}
+
+.h3{
+  padding-bottom: 15px;
+    margin-top: 1.2em;
+}
+
+  /*ใช้ร่วมกับ edit*/
+  .modal-coming {
+    border-radius: 50px;
+    background-color: #40c426 ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-coming:hover {
+    background-color: #3aaf23;
+    color: white;
+    text-decoration: none;
+  }
+
+  .modal-back {
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #006eff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-back:hover {
+    background-color: #005cd5;
+    color: white;
+    text-decoration: none;
+  }

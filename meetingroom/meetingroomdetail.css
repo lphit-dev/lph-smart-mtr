@@ -1,0 +1,28 @@
+body {
+  background: #e8e8e8 !important;
+  font-family: "Kanit";
+  font-size: 14px;
+}
+
+.h3 {
+  padding-bottom: 15px;
+  margin-top: 1.2em;
+}
+
+.space {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-space {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.5em;
+  background-color: #ffffff;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}

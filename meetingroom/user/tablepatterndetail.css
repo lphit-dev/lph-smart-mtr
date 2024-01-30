@@ -1,0 +1,48 @@
+body {
+    background: #e8e8e8 !important;
+    font-family: "Kanit";
+    font-size: 14px;
+  }
+  
+  .h3{
+    padding-bottom: 15px;
+      margin-top: 1.2em;
+  }
+
+  .header {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1440px;
+  }
+  
+  .name{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .image-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: row; /* เรียงต่อกันในแนวนอน */
+  }
+  
+  img {
+    max-width: 100%; /* ยึดขนาดภาพให้ไม่เกินกว้างของพ่อคูณ */
+    height: auto; /* รักษาสัดส่วนของรูปภาพ */
+    margin: 5px; /* ระยะห่างระหว่างรูปภาพ */
+  }
+
+  .text-under-image{
+    text-align: center;
+    font-size: 16px;
+  }

@@ -1,0 +1,193 @@
+body {
+    background: #e8e8e8 !important;
+    font-family: "Kanit";
+    font-size: 14px;
+  }
+
+  .h3{
+    padding-bottom: 15px;
+    margin-top: 1.2em;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .text-right{
+    text-align: right;
+  }
+
+  .search{
+    margin-right: 10px;
+  }
+
+  .text-search {
+    border-radius: 8px;
+    padding-top: 5px;
+    border: none;
+    padding-bottom: 5px;
+    width: 210px;
+    height: 30px;
+    font-family: "TH SarabunPSK";
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .btn-add {
+    border-radius: 50px;
+    background-color: #53be3e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    box-shadow: 4px 4px 8px 0px #adadad;
+    padding: 0.5rem 1rem;
+  }
+  
+  .btn-add:hover {
+    background-color: #3aaf23;
+    color: white;
+  }
+
+  .btn {
+    border-radius: 50px;
+    background-color: #53be3e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    box-shadow: 4px 4px 8px 0px #adadad;
+  }
+  
+  .btn:hover {
+    background-color: #3aaf23;
+    color: white;
+  }
+  
+  .img-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .btn-urgent {
+    background-color: #ffb700;
+    color: white;
+    height: 45px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .text-urgent {
+    width: 150px;
+  }
+  
+  .btn-urgent:hover {
+    background-color: #ff7b00;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .table-mean {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+  }
+
+  .text-manage{
+    width: 200px;
+  }
+
+  .btn-manage {
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #006eff;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .btn-manage:hover {
+    background-color: #005cd5;
+    color: white;
+    text-decoration: none;
+  }
+
+  .manage1 {
+    color: #f9b710;
+  }
+  
+  .manage2 {
+    color: #53be3e;
+  }
+  
+  .btn-edit {
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #ffb700;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+  }
+  
+  .btn-edit:hover {
+    background-color: #ff7b00;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn-delete {
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: red;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .btn-delete:hover {
+    background-color: #dc1313 ;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .table-line {
+    margin-top: 20px;
+  }
+  
+  .status {
+    width: 100px;
+  }
+  
+  .text-status1 {
+    color: #ff0000;
+  }
+  
+  .text-status2 {
+    color: rgb(4, 212, 0);
+  }
+  
+  .text-date {
+    width: 120px;
+  }
+  
+  .text-number {
+    width: 50px;
+  }
+
+  @media screen and (max-width: 768px) and (max-min: 768px){
+    body{
+      background: orange;
+    }
+  }

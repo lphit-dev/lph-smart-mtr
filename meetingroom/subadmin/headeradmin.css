@@ -1,0 +1,31 @@
+body {
+    background: #e8e8e8 !important;
+    font-family: "Kanit";
+    font-size: 14px;
+  }
+
+  .navbar{
+    background: #000080;
+    /*background: #800080;*/
+    color: white;
+  }
+
+  .navbar-brand{
+    color: #e8e8e8;
+  }
+
+  .navbar-brand:hover {
+    color: #FF5733 ;
+  }
+
+  .nav-link{
+    color: #e8e8e8;
+  }
+
+  .nav-link:hover {
+    color: #FF5733 ;
+  }
+
+  .navbar-toggler{
+    background-color: #000080;
+  }

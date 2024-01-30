@@ -1,0 +1,155 @@
+body {
+    background: #e8e8e8 !important;
+    font-family: "Kanit";
+    font-size: 14px;
+  }
+
+  .h3{
+    padding-bottom: 15px;
+    margin-top: 1.2em;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1440px;
+  }
+
+  .btn {
+    border-radius: 50px;
+    background-color: #53be3e ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+  }
+  
+  .btn:hover {
+    background-color: #79b791;
+    color: white;
+  }
+  
+  .img-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .btn-urgent {
+    background-color: #ffb700;
+    color: white;
+    height: 45px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+
+  .text-urgent{
+    width: 150px;
+  }
+  
+  .btn-urgent:hover {
+    background-color: #ff7b00;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .search{
+    margin-right: 10px;
+  }
+
+  .text-search {
+    border-radius: 8px;
+    padding-top: 5px;
+    border: none;
+    padding-bottom: 5px;
+    width: 210px;
+    height: 30px;
+  }
+  
+  .table-mean {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+  }
+
+  .text-manage{
+    width: 200px;
+  }
+
+  .btn-manage{
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #3285f3;
+  }
+
+  .btn-manage:hover {
+    background-color: #6897bb;
+    color: white;
+    text-decoration: none;
+  }
+
+  .manage1{
+    color: #f9b710;
+  }
+
+  .manage2{
+    color: #53be3e;
+  }
+
+  .btn-edit{
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #f9b710;
+  }
+
+  .btn-edit:hover {
+    background-color: #f0e936;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn-delete{
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #ed4c40;
+  }
+
+  .btn-delete:hover {
+    background-color: #ea526f;
+    color: white;
+    text-decoration: none;
+  }
+
+  .table-line {
+    margin-top: 20px;
+  }
+
+  .status {
+    width: 100px;
+  }
+
+  .text-status1 {
+    color: #ff0000;
+  }
+
+  .text-status2 {
+    color: rgb(4, 212, 0);
+  }
+
+  .text-date {
+    width: 120px;
+  }
+
+  .text-number{
+    width: 50px;
+  }

@@ -1,0 +1,147 @@
+body {
+  background: #e8e8e8 !important;
+  font-family: "Kanit";
+  font-size: 14px;
+}
+
+.chackbok {
+  line-height: 1.5rem;
+  margin-right: 10px;
+}
+
+.modal-xl {
+  --bs-modal-width: 1350px;
+}
+
+.space {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  width: 150px;
+}
+
+.space-2{
+  text-align: end;
+}
+
+.text-space {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.6em;
+  width: 11.8rem;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-space1 {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 5rem;
+  width: 39.1rem;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-space2 {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.6em;
+  width: 14.5em;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-space-table{
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.6em;
+  width: 165px;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-space-room {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.6em;
+  width: 39.2rem;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/*ใช้ร่วมกับ edit*/
+.modal-coming {
+  border-radius: 50px;
+  background-color: #40c426;
+  color: white;
+  font-size: 16px;
+  border: none;
+  margin-top: 1em;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.modal-coming:hover {
+  background-color: #3aaf23;
+  color: white;
+  text-decoration: none;
+}
+
+.modal-back {
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: #006eff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.modal-back:hover {
+  background-color: #005cd5;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-select {
+  border-radius: 15px;
+  background-color: #7a45be;
+  color: white;
+  font-size: 10px;
+  border: none;
+  margin-top: 1em;
+  box-shadow: 4px 4px 8px 0px #adadad;
+  padding: 0.5rem 1rem;
+}
+
+.img{
+  text-align: end;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,82 @@
+body {
+    background: #e8e8e8 !important;
+    font-family: "Kanit";
+    font-size: 14px;
+  }
+
+  .h3{
+    padding-bottom: 15px;
+    margin-top: 1.2em;
+  }
+
+  .modal-coming2 {
+    border-radius: 50px;
+    background-color: #ffb700 ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-coming2:hover {
+    background-color: #ff7b00;
+    color: white;
+    text-decoration: none;
+  }
+
+  .modal-book {
+    border-radius: 50px;
+    background-color: #40c426 ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-book:hover {
+    background-color: #3aaf23;
+    color: white;
+    text-decoration: none;
+  }
+
+  .modal-nobook {
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-nobook:hover {
+    background-color: #dc1313 ;
+    color: white;
+    text-decoration: none;
+  }
+
+  .modal-back2 {
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #006eff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-back2:hover {
+    background-color: #005cd5;
+    color: white;
+    text-decoration: none;
+  }
+
+  .img{
+    text-align: end;
+    border-radius: 0.5rem;
+  }

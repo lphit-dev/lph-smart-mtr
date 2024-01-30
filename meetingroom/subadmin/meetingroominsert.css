@@ -1,0 +1,122 @@
+body {
+  background: #e8e8e8 !important;
+  font-family: "Kanit";
+  font-size: 14px;
+}
+
+.h3{
+  padding-bottom: 15px;
+    margin-top: 1.2em;
+}
+
+.modal-xl {
+  --bs-modal-width: 1200px;
+}
+
+.space {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  line-height: 2em;
+}
+
+.text-space {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.7em;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-space1 {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 5rem;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 10rem;
+}
+
+.text-space-room {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 5rem;
+  width: 300px;
+}
+
+.space1 {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  width: 2.3em;
+  height: 1.5em;
+  padding-bottom: 5px;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.space-low{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  line-height: 2em;
+  width: 160px;
+}
+
+  /*ใช้ร่วมกับ edit*/
+  .modal-coming {
+    border-radius: 50px;
+    background-color: #40c426 ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-coming:hover {
+    background-color: #3aaf23;
+    color: white;
+    text-decoration: none;
+  }
+
+  .modal-back {
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: #006eff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .modal-back:hover {
+    background-color: #005cd5;
+    color: white;
+    text-decoration: none;
+  }
+
+  .img {
+    border-radius: 0.5em;
+  }
