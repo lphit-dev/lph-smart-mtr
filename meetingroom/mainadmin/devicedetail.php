@@ -37,28 +37,36 @@
             <form>
                 <div class="row">
                     <div class="col-3">
-                        <img src="../img/device/microphone.jpg" alt="table_U" width="200" height="200">
-                        <br>
-                        <input type="checkbox" id="serial_mic" name="serial_mic" value="serial_mic">
-                        <label for="vehicle1">ไมค์อนุกรม</label>
+                        <label for="serial_mic">
+                            <img src="../img/device/microphone.jpg" alt="table_U" width="200" height="200">
+                            <br>
+                            <input type="checkbox" id="serial_mic" name="serial_mic" value="serial_mic">
+                            <label>ไมค์อนุกรม</label>
+                        </label>
                     </div>
                     <div class="col-3">
-                        <img src="../img/device/เครื่องฉายภาพ.png" alt="table_study" alt="table_U" width="200" height="200">
-                        <br>
-                        <input type="checkbox" id="Projector" name="Projector" value="Projector">
-                        <label for="vehicle2">เครื่องฉายภาพ</label>
+                        <label for="Projector">
+                            <img src="../img/device/เครื่องฉายภาพ.png" alt="table_study" alt="table_U" width="200" height="200">
+                            <br>
+                            <input type="checkbox" id="Projector" name="Projector" value="Projector">
+                            <label>เครื่องฉายภาพ</label>
+                        </label>
                     </div>
                     <div class="col-3">
-                        <img src="../img/device/ไมค์โครโฟนไร้สาย.jpg" alt="table_study" alt="table_U" width="200" height="200">
-                        <br>
-                        <input type="checkbox" id="wireless_microphone" name="wireless_microphone" value="wireless_microphone">
-                        <label for="vehicle3">ไมค์โครโฟนไร้สาย</label>
+                        <label for="wireless_microphone">
+                            <img src="../img/device/ไมค์โครโฟนไร้สาย.jpg" alt="table_study" alt="table_U" width="200" height="200">
+                            <br>
+                            <input type="checkbox" id="wireless_microphone" name="wireless_microphone" value="wireless_microphone">
+                            <label>ไมค์โครโฟนไร้สาย</label>
+                        </label>
                     </div>
                     <div class="col-3">
-                        <img src="../img/device/โน้ตบุ๊ค.jpg" alt="table_study" alt="table_U" width="200" height="200">
-                        <br>
-                        <input type="checkbox" id="computer_notebook" name="computer_notebook" value="computer_notebook">
-                        <label for="vehicle3">โน้ตบุ๊ค</label>
+                        <label for="computer_notebook">
+                            <img src="../img/device/โน้ตบุ๊ค.jpg" alt="table_study" alt="table_U" width="200" height="200">
+                            <br>
+                            <input type="checkbox" id="computer_notebook" name="computer_notebook" value="computer_notebook">
+                            <label>โน้ตบุ๊ค</label>
+                        </label>
                     </div>
                 </div>
                 <button type="button" class="btn-add btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">

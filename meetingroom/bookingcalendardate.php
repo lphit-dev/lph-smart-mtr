@@ -13,7 +13,7 @@
           <div class="detail">
             <div class="row">
               <div class="col-12">
-                <p>ห้องประชุม : {{item.RoomName}}</p>
+                <p>ห้องประชุม :  <span style="color: red;">{{item.RoomName}}</span></p> 
               </div>
               <div class="col-6">
                 <p>วันเวลาที่เริ่ม : {{item.StartDate}}</p>

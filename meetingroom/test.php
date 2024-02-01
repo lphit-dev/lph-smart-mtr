@@ -89,34 +89,19 @@
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <div class="row pe-5">
-                                                <div class="col-4">
-                                                    <div class="card" style="width: 18rem;">
-                                                        <img src="img/table/table_U.jpg" class="card-img-top" alt="table_U">
-                                                        <div class="card-body">
-                                                            <p class="card-text">แบบโต๊ะตัว U</p>
-                                                        </div>
-                                                    </div>
+                                            <div class="image-container" style="text-align: center;">
+                                                <div>
+                                                    <img src="img/table/table_U.jpg" alt="table_U">
+                                                    <div class="text-under-image">แบบโต๊ะตัว U</div>
                                                 </div>
-                                                <div class="col-4">
-                                                    <div class="card" style="width: 18rem;">
-                                                        <img src="img/table/table_study.jpg" class="card-img-top" alt="table_study">
-                                                        <div class="card-body">
-                                                            <p class="card-text">แบบห้องเรียน</p>
-                                                        </div>
-                                                    </div>
+                                                <div>
+                                                    <img src="img/table/table_study.jpg" alt="table_study">
+                                                    <div class="text-under-image">แบบห้องเรียน</div>
                                                 </div>
-                                                <div class="col-4">
-                                                    <div class="card" style="width: 18rem;">
-                                                        <img src="img/table/table_group.jpg" class="card-img-top" alt="table_group">
-                                                        <div class="card-body">
-                                                            <p class="card-text">แบบกลุ่ม</p>
-                                                        </div>
-                                                    </div>
+                                                <div>
+                                                    <img src="img/table/table_group.jpg" alt="table_group" width="544px;">
+                                                    <div class="text-under-image">แบบกลุ่ม</div>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <p>รูปแบบอื่น ๆ ให้แจ้งงานเคหะบริการ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -129,41 +114,29 @@
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <div class="row pe-5">
-                                                <div class="col-4">
-                                                    <div class="card" style="width: 18rem;">
-                                                        <img src="img/device/microphone.jpg" class="card-img-top" alt="microphone">
-                                                        <div class="card-body">
-                                                            <p class="card-text">ไมค์อนุกรม</p>
-                                                        </div>
+                                            <div class="image-container" style="text-align: center;">
+                                                <div>
+                                                    <img src="img/device/microphone.jpg" alt="table_U" width="450" height="450">
+                                                    <div class="text-under-image">ไมค์อนุกรม</div>
+                                                    <div class="text-under-image">
                                                     </div>
                                                 </div>
-                                                <div class="col-4">
-                                                    <div class="card" style="width: 18rem;">
-                                                        <img src="img/device/เครื่องฉายภาพ.png" class="card-img-top" alt="projector">
-                                                        <div class="card-body">
-                                                            <p class="card-text">เครื่องฉายภาพ</p>
-                                                        </div>
+                                                <div>
+                                                    <img src="img/device/เครื่องฉายภาพ.png" alt="table_study" alt="table_U" width="450" height="450">
+                                                    <div class="text-under-image">เครื่องฉายภาพ</div>
+                                                    <div class="text-under-image">
                                                     </div>
                                                 </div>
-                                                <div class="col-4">
-                                                    <div class="card" style="width: 18rem;">
-                                                        <img src="img/device/ไมค์โครโฟนไร้สาย.jpg" class="card-img-top" alt="wireless_microphone">
-                                                        <div class="card-body">
-                                                            <p class="card-text">ไมค์โครโฟนไร้สาย</p>
-                                                        </div>
+                                                <div>
+                                                    <img src="img/device/ไมค์โครโฟนไร้สาย.jpg" alt="table_study" alt="table_U" width="450" height="450">
+                                                    <div class="text-under-image">ไมค์โครโฟนไร้สาย</div>
+                                                    <div class="text-under-image">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <div class="row pe-5">
-                                                    <div class="col-4">
-                                                        <div class="card" style="width: 18rem;">
-                                                            <img src="img/device/โน้ตบุ๊ค.jpg" class="card-img-top" alt="โน้ตบุ๊ค">
-                                                            <div class="card-body">
-                                                                <p class="card-text">โน้ตบุ้ค</p>
-                                                            </div>
-                                                        </div>
+                                                <div>
+                                                    <img src="img/device/โน้ตบุ๊ค.jpg" alt="table_study" alt="table_U" width="450" height="450">
+                                                    <div class="text-under-image">โน้ตบุ๊ค</div>
+                                                    <div class="text-under-image">
                                                     </div>
                                                 </div>
                                             </div>
