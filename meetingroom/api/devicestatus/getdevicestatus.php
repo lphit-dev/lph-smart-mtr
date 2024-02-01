@@ -5,7 +5,7 @@ try {
     require '../env/header.php';
     require '../env/auth.php';
     require '../env/db.php';
-    require '../db_context/db_device.php';
+    require '../db_context/db_devicestatus.php';
 
     // $access_token = $request_headers['Authorization'] . '';
     // if (!$access_token) {
@@ -30,8 +30,8 @@ try {
     $database = new Database();
     $db = $database->getConnection();
 
-    $device = new Device($db);
-    $rs = $device->DeleteDevice($_GET['id']);
+    $devicestatus = new DeviceStatus($db);
+    $rs = $devicestatus->getDeviceStatus($_GET['id']);
 
     http_response_code(200);
     echo json_encode($rs, JSON_UNESCAPED_UNICODE);

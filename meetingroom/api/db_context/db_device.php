@@ -71,7 +71,15 @@ class Device
         return $rs;
     }
 
-    function DeleteDevice()
+    function DeleteDevice($id)
     {
+        $query = "Delete FROM [device] WHERE DeviceID = $id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+
+        $rs = new stdClass();
+        $rs->result = "success";
+        $rs->query = $query;
+        return $rs;
     }
 }

@@ -13,7 +13,7 @@
             <form>
                 <div class="row">
                     <div class="col">
-                        <img src="../img/table/table_U.jpg" alt="table_U">
+                        <label for="table_U"><img src="../img/table/table_U.jpg" alt="table_U"></label>
                         <input type="radio" id="table_U" name="fav_language" value="table_U">
                         <label for="table_U">แบบโต๊ะตัว U</label><br>
                     </div>

@@ -32,6 +32,7 @@ body {
   border: none;
   padding-bottom: 5px;
   height: 1.6em;
+  width: 11.8rem;
   background-color: #e8e8e8;
   font-family: "TH SarabunPSK";
   font-size: 20px;
@@ -45,7 +46,21 @@ body {
   border: none;
   padding-bottom: 5px;
   height: 5rem;
-  width: 37.9rem;
+  width: 39.1rem;
+  background-color: #e8e8e8;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-space2 {
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 10px;
+  border: none;
+  padding-bottom: 5px;
+  height: 1.6em;
+  width: 14.5em;
   background-color: #e8e8e8;
   font-family: "TH SarabunPSK";
   font-size: 20px;
@@ -73,12 +88,13 @@ body {
   border: none;
   padding-bottom: 5px;
   height: 1.6em;
-  width: 38rem;
+  width: 39.2rem;
   background-color: #e8e8e8;
   font-family: "TH SarabunPSK";
   font-size: 20px;
   font-weight: bold;
 }
+
 
 /*ใช้ร่วมกับ edit*/
 .modal-coming {

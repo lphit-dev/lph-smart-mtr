@@ -12,7 +12,7 @@
     <title>Meeting Room Booking System</title>
 </head>
 
-<?php include 'headeradmin.php'; ?>
+<?php include 'headeruser.php'; ?>
 <style>
     .header {
         text-align: center;

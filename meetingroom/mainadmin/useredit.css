@@ -15,6 +15,15 @@ body {
     padding-top: 5px;
   }
 
+  .space1{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    margin-left: 4.3rem;
+    width: 170px;
+  }
+
   .text-space {
     border-radius: 8px;
     padding-top: 5px;

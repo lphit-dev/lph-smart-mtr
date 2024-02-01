@@ -1,0 +1,35 @@
+.a{
+    color: black;
+}
+
+.borderp-1{
+    font-size: 18px;
+    background-color: #000080;
+    border-radius: 8px;
+    height: 2.2rem;
+    color: white;
+    padding-top: 6.5px;
+    padding-left: 10px;
+}
+
+.container{
+    --bs-gutter-x: none;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+}
+
+.row{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.accordion-button:not(.collapsed){
+    font-size: 18px;
+    background-color: #000080;
+    border-radius: 8px;
+    color: white;
+}
+
+.accordion-button::after{
+    color: white;
+}

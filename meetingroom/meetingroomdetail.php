@@ -26,68 +26,77 @@
                 <h3 class="h3">ห้องประชุมสุรินทร์-สมพร โอสถานุเคราะห์</h3>
             </div>
             <div class="row">
-                <div class="container-fluid col-sm-4">
-                    <div>
-                        <img src="img/Room/ห้องประชุม.png" alt="Room_image" width="350" height="500">
+                <div class="col-sm-4">
+                    <div class="w-100">
+                        <img class="w-100" src="img/Room/ห้องประชุม.png" alt="Room_image" >
                     </div>
                 </div>
-                <div class="container-fluid col-sm-8">
-                    <form action="#" method="post" enctype="multipart/form-data" id="bookingdetailform">
-                        <div>
-                            <div>
-                                <label class="space">ชื่อห้องประชุม</label>
-                                <input class="text-space" type="text" name="RoomName">
+                <div class="col-sm-8">
+                    <div border="0">
+                        <div class="row">
+                            <div class="col col-sm-2 m-auto">
+                                <label>ชื่อห้องประชุม</label>
                             </div>
-                            <div>
+                            <div class="col col-sm-10">
+                                <input class="text-space-room" type="text" name="RoomName">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-2">
                                 <label class="space">สถานที่ตั้ง</label>
-                                <label class="text-space">ตึกนวมินราชประชาภักดิ์ (ชั้น 6)</label>
                             </div>
-                            <div>
-                                <div class="row">
-                                    <div class="container-fluid col-sm-3">
-                                        <label class="space">รายละเอียดห้องประชุม</label>
-                                    </div>
-                                    <div class="container-fluid col-sm-9">
-                                        <textarea class="text-space" id="Description" name="Description" rows="4" cols="50"></textarea>
-                                    </div>
-                                </div>
+                            <div class="col col-sm-10">
+                                <label class="text-space-room">ตึกนวมินราชประชาภักดิ์ (ชั้น 6)</label>
                             </div>
-                            <div>
-                                <label class="space">รูปแบบการจัดโต๊ะ</label>
-                                <input class="text-space" type="checkbox" id="PatternName" name="PatternName" checked="">
-                                <label class="space">แบบห้องเรียน</label>
-                                <input class="text-space" type="checkbox" id="PatternName" name="PatternName" checked="">
-                                <label class="space">แบบตัว U (แบบประชุม)</label>
-                                <input class="text-space" type="checkbox" id="PatternName" name="PatternName" checked="">
-                                <label class="space">แบบตัวกลุ่ม</label>
-                                <input class="text-space" type="checkbox" id="PatternName" name="PatternName" checked="">
-                                <label class="space">รูปแบบอื่น ๆ ให้แจ้งงานเคหะบริการ</label>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-2">
+                                <label class="space-detal">รายละเอียดห้องประชุม</label>
                             </div>
-                            <div>
-                                <label class="space">ขั้นต่ำจำนวนผู้เข้าร่วมประชุม</label>
-                                <label class="space">10</label>
-                                <label class="space"">ท่าน</label>
-                                <label class=" space">จำนวนผู้เข้าร่วมประชุมไม่เกิน</label>
-                                <label class="space">40</label>
-                                <label class="space"">ท่าน</label>
+                            <div class="col col-sm-10">
+                                <textarea class="text-space1" id="Description" name="Description" rows="4" cols="50"></textarea>
                             </div>
-                            <div>
-                                <label class=" space">อุปกรณ์ที่มีให้ใช้</label>
-                                <input class="text-space" type="checkbox" id="DeviceID" name="DeviceID" checked="">
-                                <label class="space">ไมค์อนุกรม โต๊ะตัว U เท่านั้น</label>
-                                <input class="text-space" type="checkbox" id="DeviceID" name="DeviceID" checked="">
-                                <label class="space">ไมโครโฟนไร้สาย</label>
-                                <input class="text-space" type="checkbox" id="DeviceID" name="DeviceID" checked="">
-                                <label class="space">เครื่องฉายภาพ</label>
-                            </div>
-                            <div>
-                                <label class="space">สถานะ</label>
-                                <select class="text-space" id="UserStatusID" name="UserStatusID">
-                                    <option>พร้อมใช้งาน</option>
-                                    <option>ไม่พร้อมใช้งาน</option>
-                                </select>
-                            </div>
-                    </form>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="space">รูปแบบการจัดโต๊ะ</label>
+                        <input class="" type="checkbox" id="PatternName" name="PatternName" checked="">
+                        <label class="space">แบบห้องเรียน</label>
+                        <input class="" type="checkbox" id="PatternName" name="PatternName" checked="">
+                        <label class="space">แบบตัว U (แบบประชุม)</label>
+                        <input class="" type="checkbox" id="PatternName" name="PatternName" checked="">
+                        <label class="space">แบบตัวกลุ่ม</label>
+                        <input class="" type="checkbox" id="PatternName" name="PatternName" checked="">
+                        <label class="space">รูปแบบอื่น ๆ ให้แจ้งงานเคหะบริการ</label>
+                    </div>
+                    <div>
+                        <label class="space">ขั้นต่ำจำนวนผู้เข้าร่วมประชุม</label>
+                        <input class="space1" type="text" value="">
+                        <label class="space">ท่าน</label>
+                        <label class="space">จำนวนผู้เข้าร่วมประชุมไม่เกิน</label>
+                        <input class="space1" type="text" value="">
+                        <label class="space">ท่าน</label>
+                    </div>
+                    <div>
+                        <label class=" space">อุปกรณ์ที่มีให้ใช้</label>
+                        <input class="" type="checkbox" id="DeviceID" name="DeviceID" checked="">
+                        <label class="space">ไมค์อนุกรม โต๊ะตัว U เท่านั้น</label>
+                        <input class="" type="checkbox" id="DeviceID" name="DeviceID" checked="">
+                        <label class="space">ไมโครโฟนไร้สาย</label>
+                        <input class="" type="checkbox" id="DeviceID" name="DeviceID" checked="">
+                        <label class="space">เครื่องฉายภาพ</label>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-2">
+                            <label class="space">สถานะ</label>
+                        </div>
+                        <div class="col col-sm-2">
+                            <select class="text-space" id="UserStatusID" name="UserStatusID">
+                                <option>พร้อมใช้งาน</option>
+                                <option>ไม่พร้อมใช้งาน</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

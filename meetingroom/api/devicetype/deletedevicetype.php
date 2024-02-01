@@ -5,7 +5,7 @@ try {
     require '../env/header.php';
     require '../env/auth.php';
     require '../env/db.php';
-    require '../db_context/db_device.php';
+    require '../db_context/db_devicetype.php';
 
     // $access_token = $request_headers['Authorization'] . '';
     // if (!$access_token) {
