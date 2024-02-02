@@ -30,8 +30,8 @@ try {
     $database = new Database();
     $db = $database->getConnection();
 
-    $device = new Device($db);
-    $rs = $device->DeleteDevice($_GET['id']);
+    $devicetype = new DeviceType($db);
+    $rs = $devicetype->DeleteDeviceType($_GET['id']);
 
     http_response_code(200);
     echo json_encode($rs, JSON_UNESCAPED_UNICODE);

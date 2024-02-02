@@ -1,5 +1,5 @@
 <?php
-class DeviceType
+class BookingStatus
 {
 
     private $conn;
@@ -9,9 +9,9 @@ class DeviceType
         $this->conn = $db;
     }
 
-    function getDeviceTypeAll()
+    function getBookingStatusAll()
     {
-        $query = "SELECT * FROM [devicetype]";
+        $query = "SELECT * FROM [bookingstatus]";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -23,22 +23,22 @@ class DeviceType
         return $data;
     }
 
-    function getDeviceType($id)
+    function getBookingStatus($id)
     {
-        $query = "SELECT * FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "SELECT * FROM [bookingstatus] WHERE BookingStatusID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    function insertDeviceType($body)
+    function insertBookingStatus($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $bookingstatusId = $body["BookingStatusID"];
+        $bookingstatusName = $body["BookingStatusName"];
 
-        $query = "INSERT INTO [devicetype] (DeviceTypeID,DeviceTypeName)" .
-            " VALUES ($devicetypeId,'$devicetypeName');";
+        $query = "INSERT INTO [bookingstatus] (BookingStatusID,BookingStatusName)" .
+            " VALUES ($bookingstatusId,'$bookingstatusName');";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -48,14 +48,14 @@ class DeviceType
         return $rs;
     }
 
-    function updateDeviceType($body)
+    function updateBookingStatus($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $bookingstatusId = $body["BookingStatusID"];
+        $bookingstatusName = $body["BookingStatusName"];
 
-        $query = "UPDATE devicetype SET " .
-            " DeviceTypeName = '$devicetypeName'" .
-            " WHERE DeviceTypeID = $devicetypeId";
+        $query = "UPDATE bookingstatus SET " .
+            " BookingStatusName = '$bookingstatusName'" .
+            " WHERE BookingStatusID = $bookingstatusId";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -65,9 +65,9 @@ class DeviceType
         return $rs;
     }
 
-    function DeleteDeviceType($id)
+    function DeleteBookingStatus($id)
     {
-        $query = "Delete FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "Delete FROM [bookingstatus] WHERE BookingStatusID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 

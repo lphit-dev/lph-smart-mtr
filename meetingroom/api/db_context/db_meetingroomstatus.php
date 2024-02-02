@@ -1,5 +1,5 @@
 <?php
-class DeviceType
+class MeetingRoomStatus
 {
 
     private $conn;
@@ -9,9 +9,9 @@ class DeviceType
         $this->conn = $db;
     }
 
-    function getDeviceTypeAll()
+    function getMeetingRoomStatusAll()
     {
-        $query = "SELECT * FROM [devicetype]";
+        $query = "SELECT * FROM [meetingroomstatus]";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -23,22 +23,22 @@ class DeviceType
         return $data;
     }
 
-    function getDeviceType($id)
+    function getMeetingRoomStatus($id)
     {
-        $query = "SELECT * FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "SELECT * FROM [meetingroomstatus] WHERE StatusID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    function insertDeviceType($body)
+    function insertMeetingRoomStatus($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $statusId = $body["StatusID"];
+        $statusName = $body["StatusName"];
 
-        $query = "INSERT INTO [devicetype] (DeviceTypeID,DeviceTypeName)" .
-            " VALUES ($devicetypeId,'$devicetypeName');";
+        $query = "INSERT INTO [meetingroomstatus] (StatusID,StatusName)" .
+            " VALUES ($statusId,'$statusName');";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -48,14 +48,14 @@ class DeviceType
         return $rs;
     }
 
-    function updateDeviceType($body)
+    function updateMeetingRoomStatus($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $statusId = $body["StatusID"];
+        $statusName = $body["StatusName"];
 
-        $query = "UPDATE devicetype SET " .
-            " DeviceTypeName = '$devicetypeName'" .
-            " WHERE DeviceTypeID = $devicetypeId";
+        $query = "UPDATE meetingroomstatus SET " .
+            " StatusName = '$statusName'" .
+            " WHERE StatusID = $statusId";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -65,9 +65,9 @@ class DeviceType
         return $rs;
     }
 
-    function DeleteDeviceType($id)
+    function DeleteMeetingRoomStatus($id)
     {
-        $query = "Delete FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "Delete FROM [meetingroomstatus] WHERE StatusID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 

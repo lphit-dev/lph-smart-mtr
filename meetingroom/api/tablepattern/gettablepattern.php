@@ -5,15 +5,7 @@ try {
     require '../env/header.php';
     require '../env/auth.php';
     require '../env/db.php';
-    require '../db_context/db_device.php';
-
-    $bodyJson = file_get_contents('php://input');
-    $body = json_decode($bodyJson, TRUE); //convert JSON into array
-    //echo json_encode($body);
-
-    if (!$body) {
-        throw new ErrorException('body invalid.');
-    }
+    require '../db_context/db_tablepattern.php';
 
     // $access_token = $request_headers['Authorization'] . '';
     // if (!$access_token) {
@@ -38,8 +30,8 @@ try {
     $database = new Database();
     $db = $database->getConnection();
 
-    $device = new UrgentLevel($db);
-    $rs = $device->insertUrgentLevel($body);
+    $tablepattern = new TablePattern($db);
+    $rs = $tablepattern->getTablePattern($_GET['id']);
 
     http_response_code(200);
     echo json_encode($rs, JSON_UNESCAPED_UNICODE);

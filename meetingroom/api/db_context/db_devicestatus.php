@@ -48,14 +48,14 @@ class DeviceStatus
         return $rs;
     }
 
-    function updateDeviceType($body)
+    function updateDeviceStatus($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $devicestatusId = $body["DeviceStatusID"];
+        $devicestatusName = $body["DeviceStatusName"];
 
-        $query = "UPDATE devicetype SET " .
-            " DeviceTypeName = '$devicetypeName'" .
-            " WHERE DeviceTypeID = $devicetypeId";
+        $query = "UPDATE devicestatus SET " .
+            " DeviceStatusName = '$devicestatusName'" .
+            " WHERE DeviceStatusID = $devicestatusId";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -65,12 +65,15 @@ class DeviceStatus
         return $rs;
     }
 
-    function DeleteDevice($id)
+    function DeleteDeviceStatus($id)
     {
-        $query = "Delete FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "Delete FROM [devicestatus] WHERE DeviceStatusID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        $rs = new stdClass();
+        $rs->result = "success";
+        $rs->query = $query;
+        return $rs;
     }
 }

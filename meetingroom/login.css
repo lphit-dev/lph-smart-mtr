@@ -1,6 +1,20 @@
-body {
-  background: #e8e8e8 !important;
-  font-family: "Kanit";
+@font-face {
+  font-family: "TH SarabunPSK";
+  font-weight: bold;
+  src: url("asset/font/TH SarabunPSK.ttf") format("truetype");
+}
+
+.THSarabun {
+  font-family: 'TH SarabunPSK', sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.kanit{
+  font-size: 1.1rem;
+  text-align: right;
+  color: #000080;
 }
 
 .row {

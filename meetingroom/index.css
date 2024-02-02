@@ -1,35 +1,56 @@
-.a{
+
+@font-face {
+    font-family: "TH SarabunPSK";
+    font-weight: bold;
+    src: url("asset/font/TH SarabunPSK.ttf") format("truetype");
+  }
+
+  .THSarabun {
+    font-family: 'TH SarabunPSK', sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1;
+  }
+
+  .kanit{
+    font-size: 1.1rem;
+    text-align: right;
+    color: #000080;
+    line-height: 1;
+  }
+
+.a {
     color: black;
 }
 
-.borderp-1{
-    font-size: 18px;
+.borderp-1 {
+    font-size: 22.7px;
     background-color: #000080;
     border-radius: 8px;
-    height: 2.2rem;
+    height: 4rem;
     color: white;
-    padding-top: 6.5px;
     padding-left: 10px;
+    padding-top: 1.2rem;
 }
 
-.container{
-    --bs-gutter-x: none;
-    background-color: #e8e8e8;
-    border-radius: 15px;
+.borderp-2 {
+    font-size: 22.1px;
+    background-color: #000080;
+    color: white;
+
 }
 
-.row{
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     font-size: 18px;
     background-color: #000080;
     border-radius: 8px;
     color: white;
 }
 
-.accordion-button::after{
+.accordion-button.collapsed{
+    font-size: 18px;
+    background-color: #000080;
+    border-radius: 8px;
     color: white;
 }

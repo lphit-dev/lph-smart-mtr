@@ -1,5 +1,5 @@
 <?php
-class DeviceType
+class UrgentLevel
 {
 
     private $conn;
@@ -9,9 +9,9 @@ class DeviceType
         $this->conn = $db;
     }
 
-    function getDeviceTypeAll()
+    function getUrgentLevelAll()
     {
-        $query = "SELECT * FROM [devicetype]";
+        $query = "SELECT * FROM [urgentlevel]";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -23,22 +23,22 @@ class DeviceType
         return $data;
     }
 
-    function getDeviceType($id)
+    function getUrgentLevel($id)
     {
-        $query = "SELECT * FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "SELECT * FROM [urgentlevel] WHERE UlevelID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    function insertDeviceType($body)
+    function insertUrgentLevel($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $ulevelID = $body["UlevelID"];
+        $levelName = $body["LevelName"];
 
-        $query = "INSERT INTO [devicetype] (DeviceTypeID,DeviceTypeName)" .
-            " VALUES ($devicetypeId,'$devicetypeName');";
+        $query = "INSERT INTO [urgentlevel] (UlevelID,LevelName)" .
+            " VALUES ($ulevelID,'$levelName');";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -48,14 +48,14 @@ class DeviceType
         return $rs;
     }
 
-    function updateDeviceType($body)
+    function updateUrgentLevel($body)
     {
-        $devicetypeId = $body["DeviceTypeID"];
-        $devicetypeName = $body["DeviceTypeName"];
+        $ulevelID = $body["UlevelID"];
+        $levelName = $body["LevelName"];
 
-        $query = "UPDATE devicetype SET " .
-            " DeviceTypeName = '$devicetypeName'" .
-            " WHERE DeviceTypeID = $devicetypeId";
+        $query = "UPDATE urgentlevel SET " .
+            " LevelName = '$levelName'" .
+            " WHERE UlevelID = $ulevelID";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -65,9 +65,9 @@ class DeviceType
         return $rs;
     }
 
-    function DeleteDeviceType($id)
+    function DeleteUrgentLevel($id)
     {
-        $query = "Delete FROM [devicetype] WHERE DeviceTypeID = $id";
+        $query = "Delete FROM [urgentlevel] WHERE UlevelID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 

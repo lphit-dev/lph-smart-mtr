@@ -5,7 +5,7 @@ try {
     require '../env/header.php';
     require '../env/auth.php';
     require '../env/db.php';
-    require '../db_context/db_device.php';
+    require '../db_context/db_tablepattern.php';
 
     $bodyJson = file_get_contents('php://input');
     $body = json_decode($bodyJson, TRUE); //convert JSON into array
@@ -38,8 +38,8 @@ try {
     $database = new Database();
     $db = $database->getConnection();
 
-    $device = new UrgentLevel($db);
-    $rs = $device->insertUrgentLevel($body);
+    $tablepattern = new TablePattern($db);
+    $rs = $tablepattern->UpdateTablePattern($body);
 
     http_response_code(200);
     echo json_encode($rs, JSON_UNESCAPED_UNICODE);
