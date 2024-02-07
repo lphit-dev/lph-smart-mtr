@@ -28,15 +28,19 @@ body {
 }
 
 .text-search {
+  background-color: #ffffff;
   border-radius: 8px;
-  padding-top: 5px;
-  border: none;
-  padding-bottom: 5px;
-  width: 210px;
-  height: 30px;
   font-family: "TH SarabunPSK";
   font-size: 20px;
   font-weight: bold;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  /* กำหนดพื้นที่รอบข้อความภายใน input เป็น 5px */
+  width: 23.7%;
+  /* กำหนดความกว้างของ input */
+  height: 32px;
+  /* กำหนดความสูงของ input */
 }
 
 .table-mean {

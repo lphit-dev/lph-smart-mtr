@@ -39,16 +39,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="container-fluid col-sm-2">
+      <div class=" col-sm-2">
         <p class="show">แสดง 2 รายการ </p>
       </div>
       <div class="col col-sm-5">
         <a class="btn-urgent" href="#" style="margin-left: -70px;">ระดับความด่วน</a>
       </div>
-      <div class="container-fluid col-sm-5">
+      <div class=" col-sm-5">
         <div class="text-right">
           <label class="search">ค้นหา</label>
           <input class="text-search" type="text" name="search">
+          <!-- <button type="submit" class="btn1 btn-block btn-success " id="btnSearch"><i class="fas fa-search"> </i> ค้นหา </button> -->
         </div>
       </div>
     </div>
@@ -93,10 +94,10 @@
         </table>
         <div><br>
           <div class="row">
-            <div class="container-fluid col-sm-6">
+            <div class=" col-sm-6">
               <p>แสดง 1 ถึง 10 จาก 14 แถว</p>
             </div>
-            <div class="container-fluid col-sm-6">
+            <div class=" col-sm-6">
               <div class="text-right">
                 <p>ก่อนหน้า ถัดไป</p>
               </div>
@@ -265,10 +266,10 @@
       }
     })
     flatpickr("#datetimepicker", {
-    enableTime: true,
-    dateFormat: "Y-m-d H:i",
-    // ตัวเลือกเพิ่มเติมตามความต้องการ
-  });
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      // ตัวเลือกเพิ่มเติมตามความต้องการ
+    });
   </script>
 
 </body>

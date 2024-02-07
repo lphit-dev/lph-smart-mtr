@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../asset/date/flatpickr.min.css">
   <script src="../asset/date/flatpickr.js"></script>
     <link href="bookingdetailhistory.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css" />
+    
     <title>Meeting Room Booking System</title>
 </head>
 <?php include 'headeruser.php'; ?>

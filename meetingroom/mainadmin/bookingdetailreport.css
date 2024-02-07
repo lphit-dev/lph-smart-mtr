@@ -1,155 +1,276 @@
 body {
-    background: #e8e8e8 !important;
-    font-family: "Kanit";
-    font-size: 14px;
-  }
+  background: #e8e8e8 !important;
+  font-family: "Kanit";
+  font-size: 14px;
+}
 
-  .h3{
-    padding-bottom: 15px;
-    margin-top: 1.2em;
-  }
-  
-  .header {
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 1440px;
-  }
+.header {
+  text-align: center;
+}
 
-  .btn {
-    border-radius: 50px;
-    background-color: #53be3e ;
-    color: white;
-    font-size: 16px;
-    border: none;
-    margin-top: 1em;
-  }
-  
-  .btn:hover {
-    background-color: #79b791;
-    color: white;
-  }
-  
-  .img-icon {
-    width: 25px;
-    height: 25px;
-  }
-  
-  .btn-urgent {
-    background-color: #ffb700;
-    color: white;
-    height: 45px;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-  }
+.container {
+  max-width: 1440px;
+}
 
-  .text-urgent{
-    width: 150px;
-  }
-  
-  .btn-urgent:hover {
-    background-color: #ff7b00;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .search{
-    margin-right: 10px;
-  }
+.text-right {
+  text-align: right;
+}
 
-  .text-search {
-    border-radius: 8px;
-    padding-top: 5px;
-    border: none;
-    padding-bottom: 5px;
-    width: 210px;
-    height: 30px;
-  }
-  
-  .table-mean {
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    background-color: white;
-  }
+.btn {
+  border-radius: 8px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  height: 34px;
+  /* กำหนดความสูงของ input */
+}
 
-  .text-manage{
-    width: 200px;
-  }
+.btn:hover {
+  background-color: #53be3e;
+  color: white;
+}
 
-  .btn-manage{
-    border-radius: 50px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    background-color: #3285f3;
-  }
+.img-icon {
+  width: 25px;
+  height: 25px;
+}
 
-  .btn-manage:hover {
-    background-color: #6897bb;
-    color: white;
-    text-decoration: none;
-  }
+.btn-urgent {
+  background-color: #ffb700;
+  color: white;
+  height: 45px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
 
-  .manage1{
-    color: #f9b710;
-  }
+.text-urgent {
+  width: 150px;
+}
 
-  .manage2{
-    color: #53be3e;
-  }
+.btn-urgent:hover {
+  background-color: #ff7b00;
+  color: white;
+  text-decoration: none;
+}
 
-  .btn-edit{
-    border-radius: 50px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    background-color: #f9b710;
-  }
+.search {
+  margin-right: 10px;
+}
 
-  .btn-edit:hover {
-    background-color: #f0e936;
-    color: white;
-    text-decoration: none;
-  }
+.text-search {
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  /* กำหนดพื้นที่รอบข้อความภายใน input เป็น 5px */
+  width: 22.8%;
+  /* กำหนดความกว้างของ input */
+  height: 32px;
+  /* กำหนดความสูงของ input */
+}
 
-  .btn-delete{
-    border-radius: 50px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    background-color: #ed4c40;
-  }
+.info-box {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  min-height: 80px;
+  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+}
 
-  .btn-delete:hover {
-    background-color: #ea526f;
-    color: white;
-    text-decoration: none;
-  }
+.info-box .info-box-icon {
+  border-radius: 0.25rem;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.875rem;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+}
 
-  .table-line {
-    margin-top: 20px;
-  }
+.info-box .info-box-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.8;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+  overflow: hidden;
+}
 
-  .status {
-    width: 100px;
-  }
+.bg-info1{
+  color: #fff !important;
+}
+.bg-info2{
+  color: #fff !important;
+}
+.bg-info3{
+  color: #fff !important;
+}
+.bg-info4{
+  color: #fff !important;
+}
 
-  .text-status1 {
-    color: #ff0000;
-  }
+.bg-info1 {
+  --bs-bg-opacity: 1;
+  background-color: #902673!important;
+}
+.bg-info2 {
+  --bs-bg-opacity: 1;
+  background-color: #ffb700!important;
+}
+.bg-info3 {
+  --bs-bg-opacity: 1;
+  background-color: #3aaf23!important;
+}
+.bg-info4 {
+  --bs-bg-opacity: 1;
+  background-color: #dc1313!important;
+}
 
-  .text-status2 {
-    color: rgb(4, 212, 0);
-  }
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.75rem 1.25rem;
+  position: relative;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
 
-  .text-date {
-    width: 120px;
-  }
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-bg-type: none;
+}
 
-  .text-number{
-    width: 50px;
-  }
+.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 2px 0;
+  white-space: nowrap;
+  justify-content: flex-end;
+}
+
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.table-bordered.dataTable {
+  border-right-width: 0;
+}
+
+.table-responsive {
+  overflow-x: hidden;
+
+}
+
+.table-mean {
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+}
+
+.text-manage {
+  width: 200px;
+}
+
+.btn-manage {
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: #3285f3;
+}
+
+.btn-manage:hover {
+  background-color: #6897bb;
+  color: white;
+  text-decoration: none;
+}
+
+.manage1 {
+  color: #f9b710;
+}
+
+.manage2 {
+  color: #53be3e;
+}
+
+.btn-edit {
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: #f9b710;
+}
+
+.btn-edit:hover {
+  background-color: #f0e936;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-delete {
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: #ed4c40;
+}
+
+.btn-delete:hover {
+  background-color: #ea526f;
+  color: white;
+  text-decoration: none;
+}
+
+.table-line {
+  margin-top: 20px;
+}
+
+.status {
+  width: 15rem;
+}
+
+.text-status1 {
+  color: #ff0000;
+}
+
+.text-status2 {
+  color: rgb(4, 212, 0);
+}
+
+.text-date {
+  width: 120px;
+}
+
+.text-number {
+  width: 50px;
+}
+
+.text-matter{
+  width: 20rem;
+}
+
+.text-room{
+  width: 20rem;
+}

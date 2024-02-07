@@ -9,25 +9,6 @@ body {
     margin-top: 1.2em;
   }
 
-  .space{
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 5px;
-  }
-
-  .text-space {
-    border-radius: 8px;
-    padding-top: 5px;
-    margin-top: 10px;
-    border: none;
-    padding-bottom: 5px;
-    height: 1.7em;
-    background-color: #e8e8e8;
-    font-family: "TH SarabunPSK";
-    font-size: 20px;
-    font-weight: bold;
-  }
-
   .btn-coming {
     border-radius: 50px;
     background-color: #53be3e ;

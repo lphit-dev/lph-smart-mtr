@@ -23,10 +23,10 @@
     <div>
         <div class="container" id="app">
             <div class="row">
-                <div class="col col-sm-6">
+                <div class="col-sm-6">
                     <h3 class="h3">ข้อมูลอุปกรณ์</h3>
                 </div>
-                <div class="col col-sm-6"><br>
+                <div class="col-sm-6"><br>
                     <div class="text-right">
                         <!-- ปุ่มเปิด Modal 1 -->
                         <button type="button" class="btn-add btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1"><i class="fa-solid fa-plus" style="color: #ffffff;"></i>
@@ -37,10 +37,10 @@
             </div>
             <div>
                 <div class="row">
-                    <div class="col col-sm-2">
+                    <div class="col-sm-2">
                         <p>แสดง XX รายการ </p>
                     </div>
-                    <div class="col col-sm-10">
+                    <div class="col-sm-10">
                         <div class="text-right">
                             <label class="search">ค้นหา</label>
                             <input class="text-search" type="text">
@@ -77,10 +77,10 @@
                         </table>
                         <div><br>
                             <div class="row">
-                                <div class="col col-sm-6">
+                                <div class="col-sm-6">
                                     <p>แสดง 1 ถึง 10 จาก 14 แถว</p>
                                 </div>
-                                <div class="col col-sm-6">
+                                <div class="col-sm-6">
                                     <div class="text-right">
                                         <p>ก่อนหน้า ถัดไป</p>
                                     </div>

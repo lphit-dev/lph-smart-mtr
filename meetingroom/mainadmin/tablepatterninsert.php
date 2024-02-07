@@ -9,11 +9,11 @@
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-2"></div>
-                <div class="col-sm-2 col">
-                    <label class="space">ชื่อรูปแบบโต๊ะ</label>
+                <div class="col-sm-2 text-end">
+                    <label>ชื่อรูปแบบโต๊ะ</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space" type="text" name="PatternName">
+                    <input class="text-space5" type="text" name="PatternName">
                 </div>
             </div>
             <div class="row">

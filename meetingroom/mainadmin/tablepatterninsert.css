@@ -13,18 +13,8 @@ body {
     text-align: center;
   }
 
-  .col{
-    text-align: end;
-  }
-  
   .container {
     max-width: 1440px;
-  }
-
-  .space{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 1rem;
   }
 
   .space-file{
@@ -32,18 +22,21 @@ body {
     margin-top: 1rem;
   }
 
-  .text-space {
-    border-radius: 8px;
-    padding-top: 5px;
-    margin-top: 10px;
-    border: none;
-    padding-bottom: 5px;
-    height: 1.5em;
-    background-color: #e8e8e8;
-    font-family: "TH SarabunPSK";
-    font-size: 20px;
-    font-weight: bold;
-  }
+.text-space5 {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  font-family: "TH SarabunPSK";
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  /* กำหนดพื้นที่รอบข้อความภายใน input เป็น 5px */
+  width: 100%;
+  /* กำหนดความกว้างของ input */
+  height: 32px;
+  /* กำหนดความสูงของ input */
+}
 
   /*ใช้ร่วมกับ edit*/
   .modal-coming {

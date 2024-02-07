@@ -6,98 +6,97 @@
             <h3 class="h3">เพิ่มผู้ใช้งาน</h3>
         </div>
         <div border="0">
-            <div class="row">
-                <div class="col col-sm-2">
+            <div class="row mb-lg-2">
+                <div class="col-sm-2">
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">ชื่อเข้าใช้ระบบ</label>
+                <div class="col-sm-2 text-end">
+                    <label>ชื่อเข้าใช้ระบบ</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="Username">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="Username">
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">รหัสผ่านเข้าใช้ระบบ</label>
+                <div class="col-sm-2 text-end">
+                    <label>รหัสผ่านเข้าใช้ระบบ</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="password" name="Password">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="password" name="Password">
+                </div>
+            </div>
+            <div class="row mb-lg-2">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-2 text-end">
+                    <label>คำนำหน้า</label>
+                </div>
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="PrefixName">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col col-sm-2">
+            <div class="row mb-lg-2">
+                <div class="col-sm-2">
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">คำนำหน้า</label>
+                <div class="col-sm-2 text-end">
+                    <label>ชื่อผู้จอง</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="PrefixName">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="FirstName">
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col col-sm-2">
+                <div class="col-sm-2 text-end">
+                    <label>นามสกุล</label>
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">ชื่อผู้จอง</label>
-                </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="FirstName">
-                </div>
-                <div class="col col-sm-2">
-                    <label class="space">นามสกุล</label>
-                </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="LastName">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="LastName">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col col-sm-2"></div>
-                <div class="col col-sm-2">
-                    <label class="space">ตำแหน่ง</label>
+            <div class="row mb-lg-2">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2 text-end">
+                    <label>ตำแหน่ง</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="Position">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="Position">
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">หน่วยงาน/หอผู้ป่วย</label>
+                <div class="col-sm-2 text-end">
+                    <label>หน่วยงาน/หอผู้ป่วย</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="Department">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="Department">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col col-sm-2"></div>
-                <div class="col col-sm-2">
-                    <label class="space">เบอร์โทรภายใน</label>
+            <div class="row mb-lg-2">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2 text-end">
+                    <label>เบอร์โทรภายใน</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="InternalPhoneNumber">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="InternalPhoneNumber">
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">เบอร์มือถือ</label>
+                <div class="col-sm-2 text-end">
+                    <label>เบอร์มือถือ</label>
                 </div>
-                <div class="col col-sm-2">
-                    <input class="text-space" type="text" name="SelfPhoneNumber">
+                <div class="col-sm-2">
+                    <input class="text-space5" type="text" name="SelfPhoneNumber">
                 </div>
             </div>
-            <div class="row">
-                <div class="col col-sm-2"></div>
-                <div class="col col-sm-2">
-                    <label class="space">สถานะ</label>
+            <div class="row mb-lg-2">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2 text-end">
+                    <label>สถานะ</label>
                 </div>
-                <div class="col col-sm-2">
-                    <select class="text-space" id="UserStatusID" name="UserStatusID">
+                <div class="col-sm-2">
+                    <select class="text-space6" id="UserStatusID" name="UserStatusID">
                         <option>ปกติ</option>
                         <option>Blacklist</option>
                     </select>
                 </div>
-                <div class="col col-sm-2">
-                    <label class="space">ประเภทผู้ใช้งาน</label>
+                <div class="col-sm-2 text-end">
+                    <label>ประเภทผู้ใช้งาน</label>
                 </div>
-                <div class="col col-sm-2">
-                    <select class="text-space" id="UserTypeID" name="UserTypeID">
+                <div class="col-sm-2">
+                    <select class="text-space6" id="UserTypeID" name="UserTypeID">
                         <option>ผู้ดูแลระบบรอง</option>
                         <option>ผู้ใช้งานระบบ</option>
                     </select>

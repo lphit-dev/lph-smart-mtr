@@ -6,24 +6,24 @@
             <h3 class="h3">แก้ไขประเภทผู้ใช้งาน</h3>
         </div>
         <div border="0">
-            <div class="row">
+            <div class="row mb-lg-2">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-2"></div>
-                <div class="col-sm-2 col">
-                    <label class="space">ชื่อประเภทผู้ใช้งาน</label>
+                <div class="col-sm-2 text-end">
+                    <label>ชื่อประเภทผู้ใช้งาน</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space" type="text" name="PatternName" readonly value="ผู้ดูแลระบบหลัก">
+                    <input class="text-space5" type="text" name="PatternName" readonly value="ผู้ดูแลระบบหลัก">
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-lg-2">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-2"></div>
-                <div class="col-sm-2 col">
-                    <label class="space">Linetoken</label>
+                <div class="col-sm-2 text-end">
+                    <label>Linetoken</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space" type="text" name="PatternName">
+                    <input class="text-space5" type="text" name="PatternName">
                 </div>
             </div>
         </div>

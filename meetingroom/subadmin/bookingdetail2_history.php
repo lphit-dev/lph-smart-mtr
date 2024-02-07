@@ -66,8 +66,8 @@
                         <div class="col col-sm-2">
                             <label class="space">ห้องประชุม</label>
                         </div>
-                        <div class="col col-sm-3">
-                            <select class="text-space" id="MeetingRoomID" name="MeetingRoomID">
+                        <div class="col col-sm-10">
+                            <select class="text-space2" id="MeetingRoomID" name="MeetingRoomID">
                                 <option>ห้องประชุมสุรินทร์-สมพร โอสถานุเคราะห์</option>
                                 <option>ห้องประชุมชั้น 8 อาหารผู้ป่วยนอก</option>
                                 <option>ห้องประชุมเล็ก 2</option>
@@ -97,13 +97,15 @@
                             <label class="space">วันเวลาที่เริ่มใช้งาน</label>
                         </div>
                         <div class="col col-sm-3">
-                            <input class="text-space-table" type="datetime-local" id="datetimepicker" placeholder=" กดเลือกวันเวลาที่เริ่มต้น" name="StartDate">
+                            <input class="text-space-table" type="datetime-local" id="datetimepicker" placeholder=" กดที่นี่เลือกวันเวลาที่เริ่มต้น" name="StartDate">
+                            <i class="fa-regular fa-calendar fa-xl"></i>
                         </div>
                         <div class="col col-sm-3 space-2">
                             <label class="space">วันเวลาสิ้นสุดการใช้งาน</label>
                         </div>
                         <div class="col col-sm-4">
-                            <input class="text-space-table" type="datetime-local" id="datetimepicker" placeholder=" กดเลือกวันเวลาที่สิ้นสุด" name="EndDate">
+                            <input class="text-space-table" type="datetime-local" id="datetimepicker" placeholder=" กดที่นี่เลือกวันเวลาที่สิ้นสุด" name="EndDate">
+                            <i class="fa-regular fa-calendar fa-xl"></i>
                         </div>
                     </div>
                     <div class="row">
@@ -115,7 +117,7 @@
                         </div>
                         <!-- ปุ่มเปิด Modal 4 -->
                         <div class="col col-sm-3">
-                            <button type="button" class="btn-select btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4" style="margin-left: -2.5rem;">
+                            <button type="button" class="btn-select btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4" style="margin-left: -1.5rem;">
                                 เลือก
                             </button>
                         </div>
@@ -137,7 +139,7 @@
                         </div>
                         <!-- ปุ่มเปิด Modal 5 -->
                         <div class="col col-sm-3">
-                            <button type="button" class="btn-select btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5" style="margin-left: -2.5rem;">
+                            <button type="button" class="btn-select btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5" style="margin-left: -1.5rem;">
                                 เลือก
                             </button>
                         </div>

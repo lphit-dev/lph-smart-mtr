@@ -1,85 +1,36 @@
-body {
-  background: #e8e8e8 !important;
-  font-family: "Kanit";
-  font-size: 16px;
-}
 
 .h3 {
   padding-bottom: 15px;
   margin-top: 1.2em;
 }
 
-.space {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  line-height: 2rem;
-}
-
-.space-detal {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  line-height: 2em;
-  width: 130px;
-}
-
-.text-space {
-  border-radius: 8px;
-  padding-top: 5px;
-  margin-top: 10px;
-  border: none;
-  padding-bottom: 5px;
-  height: 1.7em;
-  background-color: #ffffff;
-  font-family: "TH SarabunPSK";
-  font-size: 20px;
+.THSarabun {
+  font-family: 'TH SarabunPSK', sans-serif !important;
+  font-size: 1.3rem;
   font-weight: bold;
+  text-align: justify;
 }
 
-.text-space1 {
-  border-radius: 8px;
-  padding-top: 5px;
-  margin-top: 10px;
-  border: none;
-  padding-bottom: 5px;
-  height: 5rem;
-  background-color: #ffffff;
-  font-family: "TH SarabunPSK";
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 13rem;
+.kanit{
+  font-size: 1rem;
+  text-align: right;
+  color: #000080;
 }
-
-.space1 {
-  border-radius: 8px;
-  padding-top: 5px;
-  margin-top: 10px;
-  border: none;
-  width: 2.3em;
-  height: 1.5em;
-  padding-bottom: 5px;
-  background-color: #ffffff;
-  font-family: "TH SarabunPSK";
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.text-space-room {
-  border-radius: 8px;
-  padding-top: 5px;
-  margin-top: 10px;
-  border: none;
-  padding-bottom: 5px;
-  background-color: #ffffff;
-  font-family: "TH SarabunPSK";
-  font-size: 20px;
-  font-weight: bold;
-  padding-right: 5rem;
-  width: 256px;
-}
-
 
 .img {
   border-radius: 0.5em;
+}
+
+.accordion-button{
+  background-color: #ffffff;
+  color: #000080;
+}
+
+.accordion-button:not(.collapsed){
+  color: #ffffff;
+  background-color: #000080;
+}
+
+.accordion-button:focus{
+  box-shadow: none;
 }

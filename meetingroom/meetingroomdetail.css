@@ -1,28 +1,36 @@
-body {
-  background: #e8e8e8 !important;
-  font-family: "Kanit";
-  font-size: 14px;
-}
 
 .h3 {
   padding-bottom: 15px;
   margin-top: 1.2em;
 }
 
-.space {
-  margin-left: 10px;
-  margin-right: 10px;
+.THSarabun {
+  font-family: 'TH SarabunPSK', sans-serif !important;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: justify;
 }
 
-.text-space {
-  border-radius: 8px;
-  padding-top: 5px;
-  margin-top: 10px;
-  border: none;
-  padding-bottom: 5px;
-  height: 1.5em;
+.kanit{
+  font-size: 1rem;
+  text-align: right;
+  color: #000080;
+}
+
+.img {
+  border-radius: 0.5em;
+}
+
+.accordion-button{
   background-color: #ffffff;
-  font-family: "TH SarabunPSK";
-  font-size: 20px;
-  font-weight: bold;
+  color: #000080;
+}
+
+.accordion-button:not(.collapsed){
+  color: #ffffff;
+  background-color: #000080;
+}
+
+.accordion-button:focus{
+  box-shadow: none;
 }
