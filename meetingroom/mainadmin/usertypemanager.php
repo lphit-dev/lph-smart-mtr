@@ -10,6 +10,8 @@
     <script src="../asset/js/bootstrap.min.js"></script>
     <script src="../asset/vue2/vue.js"></script>
     <link href="usertypemanager.css" rel="stylesheet">
+    <script src="../asset/js/jquery.js"></script>
+    <script src="../asset/npm/axios/dist/axios.min.js"></script>
     <title>Meeting Room Booking System</title>
 </head>
 <?php include 'headeradmin.php'; ?>
@@ -42,12 +44,12 @@
                                 <th>จัดการ</th>
                             </tr>
                             <tr class="table-mean" v-for="item in list">
-                                <td>{{item.UserTypeID}}</td>
+                               <td>{{item.UserTypeID}}</td>
                                 <td>{{item.TypeName}}</td>
                                 <td>{{item.LineToken}}</td>
                                 <td>
                                     <!-- ปุ่มเปิด Modal 1 -->
-                                    <button type="button" class="btn-edit btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                                    <button type="button" class="btn-edit btn-primary" @click="openedit(item.UserTypeID)">
                                         แก้ไข
                                     </button>
                                 </td>
@@ -93,68 +95,43 @@
             el: '#app',
             data: {
                 title: 'Hello Vue!',
-                list: [{
-                    UserTypeID: 1,
-                    TypeName: 'ผู้ดูแลระบบหลัก',
-                    LineToken: '',
-                }, {
-                    UserTypeID: 1,
-                    TypeName: 'ผู้ดูแลระบบรอง',
-                    LineToken: '',
-                }, {
-                    UserTypeID: 3,
-                    TypeName: 'ผู้ใช้งานระบบ',
-                    LineToken: '',
-                }, ],
+                list: [
+
+                ],
+                editForm: {},
             }
         })
 
-        function btnDelete(id) {
-            return Swal.fire({
-                title: "กรุณายืนยันการลบข้อมูล" + id + " ?",
-                text: "เมื่อลบข้อมูลจะหายไป !",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "ใช่, ลบข้อมูล!",
-                cancelButtonText: "ยกเลิก",
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: "ลบสำเร็จแล้ว !",
-                        text: "คุณได้ลบข้อมูลสำเร็จ.",
-                        icon: "success",
-                    })
-                    //location.href = self.attr('href';
-                }
-            });
+        function getusertypeall() {
+            const url = 'http://localhost/meetingroom/api/usertype/getusertypeall.php' ;
+
+            axios.get(url).then((response) => {
+                    // handle success
+                    console.log('getusertypeall : ', response.data);
+                    app.list = response.data;
+                })
+                .catch((error) => {
+                    // handle errors
+                });
         }
 
-        $('.delete').on('click', function(e) {
-            e.preventDefault();
-            var self = $(this);
-            console.log(self.data('title'));
-            Swal.fire({
-                title: "กรุณายืนยันการลบข้อมูล ?",
-                text: "เมื่อลบข้อมูลจะหายไป !",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "ใช่, ลบข้อมูล!",
-                cancelButtonText: "ยกเลิก",
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: "ลบสำเร็จแล้ว !",
-                        text: "คุณได้ลบข้อมูลสำเร็จ.",
-                        icon: "success",
-                    })
-                    //location.href = self.attr('href';
-                }
-            });
-        })
+        getusertypeall();
+
+        function openedit(UserTypeID) {
+            console.log(UserTypeID)
+            const url = 'http://localhost/meetingroom/api/usertype/getusertype.php?id=' + UserTypeID ;
+
+            axios.get(url).then((response) => {
+                    // handle success
+                    console.log('getusertypeid : ', response.data);
+                    app.editForm = response.data;
+                })
+                .catch((error) => {
+                    // handle errors
+                });
+            $('#myModal1').modal('show');
+        }
+
     </script>
 </body>
 

@@ -5,7 +5,7 @@ try {
     require '../env/header.php';
     require '../env/auth.php';
     require '../env/db.php';
-    require '../db_context/db_user.php';
+    require '../db_context/db_meetingroombooking.php';
 
     // $access_token = $request_headers['Authorization'] . '';
     // if (!$access_token) {
@@ -25,16 +25,16 @@ try {
     //     echo 'unauthorized';
     //     return;
     // }
-    //echo json_encode($auth_data->uid); return;
+    // //echo json_encode($auth_data->uid); return;
 
     $database = new Database();
     $db = $database->getConnection();
 
-    $user = new User($db);
-    $rs = $user->getUser($_GET['id']);
+    $meetingroombooking = new MeetingRoomBooking($db);
+    $rs = $meetingroombooking->getMeetingRoomBookingAll();
 
     http_response_code(200);
-    echo json_encode($rs);
+    echo json_encode($rs, JSON_UNESCAPED_UNICODE);
     
 } catch (Exception $e) {
     // $rs->status = 0;

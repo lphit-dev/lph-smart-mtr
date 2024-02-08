@@ -13,13 +13,13 @@
                     <label>ชื่อเข้าใช้ระบบ</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="Username">
+                    <input class="text-space5" type="text" name="Username" readonly v-model="editForm.Username">
                 </div>
                 <div class="col-sm-2 text-end">
                     <label>รหัสผ่านเข้าใช้ระบบ</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="password" name="Password">
+                    <input class="text-space5" type="password" name="Password" v-model="editForm.Password">
                 </div>
             </div>
             <div class="row mb-lg-2">
@@ -29,7 +29,7 @@
                     <label>คำนำหน้า</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="PrefixName">
+                    <input class="text-space5" type="text" name="PrefixName" v-model="editForm.PrefixName">
                 </div>
             </div>
 
@@ -40,13 +40,13 @@
                     <label>ชื่อผู้จอง</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="FirstName">
+                    <input class="text-space5" type="text" name="FirstName" v-model="editForm.FirstName">
                 </div>
                 <div class="col-sm-2 text-end">
                     <label>นามสกุล</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="LastName">
+                    <input class="text-space5" type="text" name="LastName" v-model="editForm.LastName">
                 </div>
             </div>
 
@@ -56,13 +56,13 @@
                     <label>ตำแหน่ง</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="Position">
+                    <input class="text-space5" type="text" name="Position" v-model="editForm.Position">
                 </div>
                 <div class="col-sm-2 text-end">
                     <label>หน่วยงาน/หอผู้ป่วย</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="Department">
+                    <input class="text-space5" type="text" name="Department" v-model="editForm.Department">
                 </div>
             </div>
 
@@ -72,13 +72,13 @@
                     <label>เบอร์โทรภายใน</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="InternalPhoneNumber">
+                    <input class="text-space5" type="text" name="InternalPhoneNumber" v-model="editForm.InternalPhoneNumber">
                 </div>
                 <div class="col-sm-2 text-end">
                     <label>เบอร์มือถือ</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="SelfPhoneNumber">
+                    <input class="text-space5" type="text" name="SelfPhoneNumber" v-model="editForm.SelfPhoneNumber">
                 </div>
             </div>
             <div class="row mb-lg-2">

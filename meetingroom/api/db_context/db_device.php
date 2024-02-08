@@ -11,7 +11,7 @@ class Device
 
     function getDeviceAll()
     {
-        $query = "SELECT * FROM [device]";
+        $query = "SELECT [device].*, devicetype.DeviceTypeName, devicestatus.DeviceStatusName FROM [device] INNER JOIN [devicetype] ON device.DeviceTypeID = [devicetype].DeviceTypeID INNER JOIN [devicestatus] ON [device].DeviceStatusID = [devicestatus].DeviceStatusID";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 

@@ -1,5 +1,5 @@
 <?php
-class UserType
+class MeetingRoomDevice
 {
 
     private $conn;
@@ -9,9 +9,9 @@ class UserType
         $this->conn = $db;
     }
 
-    function getUserTypeAll()
+    function getMeetingRoomDeviceAll()
     {
-        $query = "SELECT * FROM [usertype]";
+        $query = "SELECT * FROM [meetingroomdevice]";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -23,23 +23,22 @@ class UserType
         return $data;
     }
 
-    function getUserType($id)
+    function getMeetingRoomDevice($id)
     {
-        $query = "SELECT * FROM [usertype] WHERE UserTypeID = $id";
+        $query = "SELECT * FROM [meetingroomdevice] WHERE DeviceID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    function insertUserType($body)
+    function insertMeetingRoomDevice($body)
     {
-        $usertypeId = $body["UserTypeID"];
-        $typeName = $body["TypeName"];
-        $linetokenName = $body["LineToken"];
+        $deviceId = $body["DeviceID"];
+        $meetingroomId = $body["MeetingRoomID"];
 
-        $query = "INSERT INTO [usertype] (UserTypeID,TypeName,LineToken) " .
-            " VALUES ($usertypeId,'$typeName','$linetokenName');";
+        $query = "INSERT INTO [meetingroomdevice] (DeviceID,MeetingRoomID) " .
+            " VALUES ($deviceId,'$meetingroomId');";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -49,16 +48,14 @@ class UserType
         return $rs;
     }
 
-    function UpdateUserType($body)
+    function UpdateMeetingRoomDevice($body)
     {
-        $usertypeId = $body["UserTypeID"];
-        $typeName = $body["TypeName"];
-        $linetokenName = $body["LineToken"];
+        $deviceId = $body["DeviceID"];
+        $meetingroomId = $body["MeetingRoomID"];
 
-        $query = "UPDATE usertype SET " .
-            " TypeName = '$typeName'," .
-            " LineToken = '$linetokenName'" .
-            " WHERE UserTypeID = $usertypeId";
+        $query = "UPDATE meetingroomdevice SET " .
+            " MeetingRoomID = $meetingroomId" .
+            " WHERE DeviceID = $deviceId";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
@@ -68,9 +65,9 @@ class UserType
         return $rs;
     }
 
-    function DeleteUserType($id)
+    function DeleteMeetingRoomDevice($id)
     {
-        $query = "Delete FROM [usertype] WHERE UserTypeID = $id";
+        $query = "Delete FROM [meetingroomdevice] WHERE DeviceID = $id";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 

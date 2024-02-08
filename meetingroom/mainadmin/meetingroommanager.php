@@ -12,8 +12,9 @@
     <link href="meetingroommanager.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css" />
-    <script src="../node_modules/jquery/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../asset/js/jquery.js"></script>
     <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="../asset/npm/axios/dist/axios.min.js"></script>
 
     <title>Meeting Room Booking System</title>
 </head>
@@ -61,7 +62,7 @@
                                 <th>จัดการ</th>
                             </tr>
                             <tr class="table-mean" v-for="item in list">
-                                <td>{{item.id}}</td>
+                                <td>{{item.MeetingRoomID}}</td>
                                 <td>{{item.RoomName}}</td>
                                 <td>{{item.LocationName}}</td>
                                 <td>{{item.MinPeople}}</td>
@@ -69,11 +70,11 @@
                                 <td>{{item.StatusName}}</td>
                                 <td>
                                     <!-- ปุ่มเปิด Modal 2 -->
-                                    <button type="button" class="btn-edit btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                    <button type="button" class="btn-edit btn-primary" @click="openedit(item.MeetingRoomID)">
                                         แก้ไข
                                     </button>
 
-                                    <a class="delete btn-delete btn-danger btn-sm" href="#" @click="btnDelete(item.id)">ลบ</a>
+                                    <a class="delete btn-delete btn-danger btn-sm" href="#" @click="btnDelete(item.MeetingRoomID)">ลบ</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -128,26 +129,15 @@
             var myModal2 = new bootstrap.Modal(document.getElementById('myModal2'));
 
             var app = new Vue({
-                el: '#app',
-                data: {
-                    title: 'Hello Vue!',
-                    list: [{
-                        id: 1,
-                        RoomName: 'ห้องประชุมสุรินทร์-สมพร โอสถานุเคราะห์',
-                        LocationName: 'ชั้น 6 อาคารนวมินทรราชประชาภักดี',
-                        MinPeople: '10',
-                        MaxPeople: '30',
-                        StatusName: 'พร้อมใช้งาน'
-                    }, {
-                        id: 2,
-                        RoomName: 'ห้องประชุมชั้น 8',
-                        LocationName: 'ชั้น 8 อาหารผู้ป่วยนอก',
-                        MinPeople: '10',
-                        MaxPeople: '30',
-                        StatusName: 'พร้อมใช้งาน'
-                    }, ],
-                }
-            })
+            el: '#app',
+            data: {
+                title: 'Hello Vue!',
+                list: [
+
+                ],
+                editForm: {},
+            }
+        })
 
             function btnDelete(id) {
                 return Swal.fire({
@@ -171,30 +161,60 @@
                 });
             }
 
-            $('.delete').on('click', function(e) {
-                e.preventDefault();
-                var self = $(this);
-                console.log(self.data('title'));
-                Swal.fire({
-                    title: "กรุณายืนยันการลบข้อมูล ?",
-                    text: "เมื่อลบข้อมูลจะหายไป !",
-                    icon: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#3085d6",
-                    cancelButtonColor: "#d33",
-                    confirmButtonText: "ใช่, ลบข้อมูล!",
-                    cancelButtonText: "ยกเลิก",
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire({
-                            title: "ลบสำเร็จแล้ว !",
-                            text: "คุณได้ลบข้อมูลสำเร็จ.",
-                            icon: "success",
-                        })
-                        //location.href = self.attr('href';
-                    }
+            // $('.delete').on('click', function(e) {
+            //     e.preventDefault();
+            //     var self = $(this);
+            //     console.log(self.data('title'));
+            //     Swal.fire({
+            //         title: "กรุณายืนยันการลบข้อมูล ?",
+            //         text: "เมื่อลบข้อมูลจะหายไป !",
+            //         icon: "warning",
+            //         showCancelButton: true,
+            //         confirmButtonColor: "#3085d6",
+            //         cancelButtonColor: "#d33",
+            //         confirmButtonText: "ใช่, ลบข้อมูล!",
+            //         cancelButtonText: "ยกเลิก",
+            //     }).then((result) => {
+            //         if (result.isConfirmed) {
+            //             Swal.fire({
+            //                 title: "ลบสำเร็จแล้ว !",
+            //                 text: "คุณได้ลบข้อมูลสำเร็จ.",
+            //                 icon: "success",
+            //             })
+            //             //location.href = self.attr('href';
+            //         }
+            //     });
+            // })
+
+            function getmeetingroomall() {
+            const url = 'http://localhost/meetingroom/api/meetingroom/getmeetingroomall.php' ;
+
+            axios.get(url).then((response) => {
+                    // handle success
+                    console.log('getmeetingroomall : ', response.data);
+                    app.list = response.data;
+                })
+                .catch((error) => {
+                    // handle errors
                 });
-            })
+        }
+
+        getmeetingroomall();
+
+        function openedit(MeetingRoomID) {
+            console.log(MeetingRoomID)
+            const url = 'http://localhost/meetingroom/api/meetingroom/getmeetingroom.php?id=' + MeetingRoomID ;
+
+            axios.get(url).then((response) => {
+                    // handle success
+                    console.log('getmeetingroom : ', response.data);
+                    app.editForm = response.data;
+                })
+                .catch((error) => {
+                    // handle errors
+                });
+            $('#myModal2').modal('show');
+        }
         </script>
 </body>
 

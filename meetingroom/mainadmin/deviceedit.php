@@ -13,7 +13,7 @@
                     <label class="space">ชื่ออุปกรณ์</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space-device" type="text" name="DeviceName">
+                    <input class="text-space-device" type="text" name="DeviceName" v-model="editForm.DeviceName">
                 </div>
                 <div class="col-sm-2"></div>
             </div>

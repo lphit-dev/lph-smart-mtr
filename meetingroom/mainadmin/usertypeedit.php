@@ -13,7 +13,7 @@
                     <label>ชื่อประเภทผู้ใช้งาน</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="PatternName" readonly value="ผู้ดูแลระบบหลัก">
+                    <input class="text-space5" type="text" name="TypeName" readonly v-model="editForm.TypeName">
                 </div>
             </div>
             <div class="row mb-lg-2">
@@ -23,7 +23,7 @@
                     <label>Linetoken</label>
                 </div>
                 <div class="col-sm-2">
-                    <input class="text-space5" type="text" name="PatternName">
+                    <input class="text-space5" type="text" name="LineToken" v-model="editForm.LineToken">
                 </div>
             </div>
         </div>

@@ -7,6 +7,14 @@ try {
     require '../env/db.php';
     require '../db_context/db_user.php';
 
+    $bodyJson = file_get_contents('php://input');
+    $body = json_decode($bodyJson, TRUE); //convert JSON into array
+    //echo json_encode($body);
+
+    if (!$body) {
+        throw new ErrorException('body invalid.');
+    }
+
     // $access_token = $request_headers['Authorization'] . '';
     // if (!$access_token) {
     //     http_response_code(401);
@@ -25,16 +33,16 @@ try {
     //     echo 'unauthorized';
     //     return;
     // }
-    //echo json_encode($auth_data->uid); return;
+    // //echo json_encode($auth_data->uid); return;
 
     $database = new Database();
     $db = $database->getConnection();
 
     $user = new User($db);
-    $rs = $user->getUser($_GET['id']);
+    $rs = $user->UpdateUser($body);
 
     http_response_code(200);
-    echo json_encode($rs);
+    echo json_encode($rs, JSON_UNESCAPED_UNICODE);
     
 } catch (Exception $e) {
     // $rs->status = 0;

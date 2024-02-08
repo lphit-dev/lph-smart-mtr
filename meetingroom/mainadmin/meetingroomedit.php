@@ -18,7 +18,7 @@
                             <label>ชื่อห้องประชุม</label>
                         </div>
                         <div class="col-sm-9">
-                            <input class="text-space5" type="text" name="RoomName">
+                            <input class="text-space5" type="text" name="RoomName" v-model="editForm.RoomName">
                         </div>
                     </div>
                     <div class="row mb-lg-2">
@@ -37,7 +37,7 @@
                             <label>รายละเอียดห้องประชุม</label>
                         </div>
                         <div class="col-sm-9">
-                            <textarea class="text-area" id="Description" name="Description" rows="4" cols="50"></textarea>
+                            <textarea class="text-area" id="Description" name="Description" rows="4" cols="50" v-model="editForm.Description"></textarea>
                         </div>
                     </div>
                     <div class="row mb-lg-2">
@@ -71,13 +71,13 @@
                             <label>ขั้นต่ำจำนวนผู้เข้าร่วมประชุม</label>
                         </div>
                         <div class="col-sm-3">
-                            <input class="text-space7" type="text" name="MinPeople">
+                            <input class="text-space7" type="text" name="MinPeople" v-model="editForm.MinPeople">
                         </div>
                         <div class="col-sm-3">
                             <label>จำนวนผู้เข้าร่วมประชุมไม่เกิน</label>
                         </div>
                         <div class="col-sm-3">
-                            <input class="text-space7" type="text" name="MaxPeople">
+                            <input class="text-space7" type="text" name="MaxPeople" v-model="editForm.MaxPeople">
                         </div>
                     </div>
                     <div class="row mb-lg-2">

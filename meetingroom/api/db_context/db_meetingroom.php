@@ -11,7 +11,7 @@ class MeetingRoom
 
     function getMeetingRoomAll()
     {
-        $query = "SELECT * FROM [meetingroom]";
+        $query = "SELECT [meetingroom].*, meetingroomstatus.StatusName, roomlocation.LocationName FROM [meetingroom] INNER JOIN [meetingroomstatus] ON meetingroom.StatusID = meetingroomstatus.StatusID INNER JOIN [roomlocation] ON [meetingroom].LocationID = [roomlocation].LocationID";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 

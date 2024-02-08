@@ -25,16 +25,16 @@ try {
     //     echo 'unauthorized';
     //     return;
     // }
-    //echo json_encode($auth_data->uid); return;
+    // //echo json_encode($auth_data->uid); return;
 
     $database = new Database();
     $db = $database->getConnection();
 
     $user = new User($db);
-    $rs = $user->getUser($_GET['id']);
+    $rs = $user->DeleteUser($_GET['id']);
 
     http_response_code(200);
-    echo json_encode($rs);
+    echo json_encode($rs, JSON_UNESCAPED_UNICODE);
     
 } catch (Exception $e) {
     // $rs->status = 0;

@@ -12,8 +12,9 @@
     <link href="usermanager.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css" />
-    <script src="../node_modules/jquery/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../asset/js/jquery.js"></script>
     <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="../asset/npm/axios/dist/axios.min.js"></script>
 
     <title>Meeting Room Booking System</title>
 </head>
@@ -62,22 +63,22 @@
                                 <th>สถานะ</th>
                                 <th>จัดการ</th>
                             </tr>
-                            <tr class="table-mean" v-for="item in list">
-                                <td>{{item.id}}</td>
+                            <tr class="table-mean" v-for="(item,i) in list">
+                                <td>{{i+1}}</td>
                                 <td>{{item.Username}}</td>
-                                <td>{{item.Typename}}</td>
+                                <td>{{item.UserTypeName}}</td>
                                 <td>{{item.PrefixName}}</td>
                                 <td>{{item.FirstName}}</td>
                                 <td>{{item.LastName}}</td>
-                                <td>{{item.eventofdefault}}</td>
+                                <td>{{item.EventOfDefault}}</td>
                                 <td>{{item.Department}}</td>
-                                <td>{{item.StatusName}}</td>
+                                <td>{{item.UserStatusName}}</td>
                                 <td>
                                     <!-- ปุ่มเปิด Modal 2 -->
-                                    <button type="button" class="btn-edit btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                    <button type="button" class="btn-edit btn-primary" @click="openedit(item.Username)">
                                         แก้ไข
                                     </button>
-                                    <a class="delete btn-delete btn-danger btn-sm" href="#" @click="btnDelete(item.id)">ลบ</a>
+                                    <a class="delete btn-delete btn-danger btn-sm" href="#" @click="btnDelete(item.Username)">ลบ</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -129,34 +130,17 @@
         </div>
     </div>
     <script>
-        var myModal1 = new bootstrap.Modal(document.getElementById('myModal1'));
+  var myModal1 = new bootstrap.Modal(document.getElementById('myModal1'));
         var myModal2 = new bootstrap.Modal(document.getElementById('myModal2'));
 
         var app = new Vue({
             el: '#app',
             data: {
                 title: 'Hello Vue!',
-                list: [{
-                    id: 1,
-                    Username: 'Admin',
-                    Typename: 'ผู้ดูแลระบบหลัก',
-                    PrefixName: 'นาย',
-                    FirstName: 'ดาบ',
-                    LastName: 'แสงเดือน',
-                    eventofdefault: '0',
-                    Department: 'ห้องโสตทัศนศึกษา',
-                    StatusName: 'ปกติ'
-                }, {
-                    id: 2,
-                    Username: 'Doctor',
-                    Typename: 'ผู้ใช้งานระบบ',
-                    PrefixName: 'นาง',
-                    FirstName: 'วารี',
-                    LastName: 'แสงจันทร์',
-                    eventofdefault: '0',
-                    Department: 'อายุรกรรม',
-                    StatusName: 'แบล็คลิสต์'
-                }, ],
+                list: [
+
+                ],
+                editForm: {},
             }
         })
 
@@ -181,31 +165,61 @@
                 }
             });
         }
+        
+        // $('.delete').on('click', function(e) {
+        //         e.preventDefault();
+        //         var self = $(this);
+        //         console.log(self.data('title'));
+        //         Swal.fire({
+        //             title: "กรุณายืนยันการลบข้อมูล ?",
+        //             text: "เมื่อลบข้อมูลจะหายไป !",
+        //             icon: "warning",
+        //             showCancelButton: true,
+        //             confirmButtonColor: "#3085d6",
+        //             cancelButtonColor: "#d33",
+        //             confirmButtonText: "ใช่, ลบข้อมูล!",
+        //             cancelButtonText: "ยกเลิก",
+        //         }).then((result) => {
+        //             if (result.isConfirmed) {
+        //                 Swal.fire({
+        //                     title: "ลบสำเร็จแล้ว !",
+        //                     text: "คุณได้ลบข้อมูลสำเร็จ.",
+        //                     icon: "success",
+        //                 })
+        //                 //location.href = self.attr('href';
+        //             }
+        //         });
+        //     })
 
-        $('.delete').on('click', function(e) {
-            e.preventDefault();
-            var self = $(this);
-            console.log(self.data('title'));
-            Swal.fire({
-                title: "กรุณายืนยันการลบข้อมูล ?",
-                text: "เมื่อลบข้อมูลจะหายไป !",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "ใช่, ลบข้อมูล!",
-                cancelButtonText: "ยกเลิก",
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: "ลบสำเร็จแล้ว !",
-                        text: "คุณได้ลบข้อมูลสำเร็จ.",
-                        icon: "success",
-                    })
-                    //location.href = self.attr('href';
-                }
-            });
-        })
+        function getuserall() {
+            const url = 'http://localhost/meetingroom/api/user/getuserall.php' ;
+
+            axios.get(url).then((response) => {
+                    // handle success
+                    console.log('getuserall : ', response.data);
+                    app.list = response.data;
+                })
+                .catch((error) => {
+                    // handle errors
+                });
+        }
+
+        getuserall();
+
+        function openedit(user) {
+            console.log(user)
+            const url = 'http://localhost/meetingroom/api/user/getuser.php?id=' + user ;
+
+            axios.get(url).then((response) => {
+                    // handle success
+                    console.log('getuser : ', response.data);
+                    app.editForm = response.data;
+                })
+                .catch((error) => {
+                    // handle errors
+                });
+            $('#myModal2').modal('show');
+        }
     </script>
 </body>
 
